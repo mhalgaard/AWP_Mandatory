@@ -60,7 +60,7 @@ app.put('/api/newquestion', (req, res) => {
 // "Redirect" all get requests (except for the routes specified above) to React's entry point (index.html) to be handled by Reach router
 // It's important to specify this route as the very last one to prevent overriding all of the other routes
 app.get('*', (req, res) =>
-    res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
+    res.sendFile(path.resolve('..', 'Client', 'build', 'index.html'))
 );
 
 /**** Start ****/
