@@ -11,7 +11,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json()); // Parse JSON from the request body
 app.use(morgan('combined')); // Log all requests to the console
-app.use(express.static('../client/build')); // Needed for serving production build of React
+app.use(express.static('../Client/build')); // Needed for serving production build of React
 
 /****** DATABASE ******/
 const db = require('./Db.js')(mongoose);
