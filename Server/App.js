@@ -64,7 +64,7 @@ app.get('*', (req, res) =>
 );
 
 /**** Start ****/
-const url = process.env.MONGO_URL || 'mongodb://localhost/mandatory_db';
+const url = process.env.MONGODB_URL || 'mongodb://localhost/mandatory_db';
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(async () => {
         await app.listen(port); // Start the API
