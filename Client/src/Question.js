@@ -24,7 +24,7 @@ class Question extends Component {
 
 
 	async addVote(id, vote) {
-		let response = await fetch('http://localhost:8080/api/vote/', {
+		let response = await fetch(`${this.API_URL}/vote`, {
 			headers: {
 				'Content-Type': 'application/json'
 			},

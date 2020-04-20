@@ -16,7 +16,7 @@ class PostAnswer extends Component {
 
     async onSubmit() {
         // this.props.submit(this.state.answer, this.state.id);
-        let response = await fetch(`http://localhost:8080/api/questions/${this.state.id}`, {
+        let response = await fetch(`${this.API_URL}/questions/${this.state.id}`, {
 			headers: {
 				'Content-Type': 'application/json'
 			},

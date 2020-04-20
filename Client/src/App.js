@@ -36,7 +36,7 @@ class App extends Component {
 	// }
 
 	getQuestion(id) {
-		// Find the relevant kitten by id
+		// Find the relevant question by id
 		return this.state.questions.find(q => q._id === id);
 	}
 
