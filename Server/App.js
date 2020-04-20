@@ -14,7 +14,7 @@ app.use(morgan('combined')); // Log all requests to the console
 app.use(express.static('../client/build')); // Needed for serving production build of React
 
 /****** DATABASE ******/
-const db = require('./db.js')(mongoose);
+const db = require('./Db.js')(mongoose);
 
 /**** Routes ****/
 app.get('/api/questions', async (req, res) => {
