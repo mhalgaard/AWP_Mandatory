@@ -3,6 +3,8 @@ import { Link } from "@reach/router";
 import PostAnswer from "./PostAnswer";
 
 class Question extends Component {
+	API_URL = process.env.REACT_APP_API_URL;
+	
 	constructor(props) {
 		super(props);
 		this.state = {

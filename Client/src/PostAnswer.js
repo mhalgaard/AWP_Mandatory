@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 
 class PostAnswer extends Component {
+    API_URL = process.env.REACT_APP_API_URL;
+    
     constructor(props) {
         super(props);
         this.state = {
